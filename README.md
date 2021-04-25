@@ -1,2 +1,2 @@
-# BearingAPP
-An APP with bearing prediction and report functions.
+# tabBar
+小程序自定义底部菜单栏

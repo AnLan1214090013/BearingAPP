@@ -1,0 +1,26 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/api/api",
+    
+    
+    "admin/index/index",
+    "pages/index/index",
+    "pages/indexcate/indexcate",
+    "pages/mycenter/mycenter",
+    "pages/detail/detail",
+    
+    "admin/shop/caregory/index",
+    "admin/member/cart/index",
+    "admin/member/index/index",
+    "admin/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "轴承工况",
+    "navigationBarTextStyle": "black"
+  },
+
+  "sitemapLocation": "sitemap.json"
+}

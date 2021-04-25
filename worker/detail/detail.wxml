@@ -1,0 +1,18 @@
+<view class="top">最近五次检查记录：</view>
+<view class='gkContentBox'>
+    <view class="gkTitle">检测时间</view>
+    <view class="gkTitle">设备</view>
+    <view class="gkTitle">工号</view>
+    <view class="gkTitle">数据情况</view>
+  </view>
+  <view class='gkContentBox' wx:for='{{record}}' wx:for:item='item'>
+    <view class="gkContent"  >{{item.time}}</view>
+    <view class="gkContent"  >{{item.device}}</view>
+    <view class="gkContent" >{{item.gonghao}}</view> 
+    <view class="gkContent" >{{item.condition}}</view>
+  </view>
+<view class="table">
+ <ec-canvas  ec="{{ ecLine }}"></ec-canvas>
+</view>
+<nav-tabar selected="{{selected}}"></nav-tabar> 
+

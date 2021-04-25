@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "nav-tabar": "/components/worker-tabbar/index",
+    "ec-canvas": "../../ec-canvas/ec-canvas"
+  }
+}

@@ -1,0 +1,39 @@
+<text>\n\n\n\n</text>
+<text class='rizhi'>报告上传</text>
+<text>\n\n\n\n</text>
+<view class="order1">
+<view class="order2">
+  <view class="box1">
+  <view class='row'>报告时间：
+    <text style="font-weight:bold">{{time}}</text>
+  </view>
+</view>
+</view>
+
+<view class="box2">
+  <picker bindchange="bindPickerChange" value="{{index2}}" range="{{array}}">
+    <view class="picker">
+      报告设备：
+      <text style="color:#237ab7;font-weight:bold;font-size:18px">{{array[index2]}}</text>
+    </view>
+  </picker>
+</view>
+<view class="order2">
+  <picker bindchange="bindPickerChange3" value="{{index3}}" range="{{array2}}">
+    <view class="picker">
+      设备状况：
+      <text style="color:#237ab7;font-weight:bold;font-size:18px">{{array2[index3]}}</text>
+    </view>
+  </picker>
+</view>
+<view class="order2">
+  <text>员工工号：</text><input class="section1" bindinput="idinput" value="{{blank}}" placeholder="输入你的工号" />
+</view>
+<text class="section2" space="ensp"> —————————————</text>
+</view>
+<button bindtap="confirm" class="btntype"  type="primary">提交报告</button>
+<text>\n{{tag}}</text>
+<button bindtap="toreport" class="btntype"  type="primary">查看报告</button>
+
+
+<nav-tabar selected="{{selected}}"></nav-tabar>
