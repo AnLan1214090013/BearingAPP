@@ -1,0 +1,34 @@
+/* pages/mine/mine.wxss */
+.order1{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between
+}
+
+.order2{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start
+}
+
+.rizhi{
+  font-size:40rpx;
+}
+
+.section1{
+  margin-bottom: 0rpx; 
+  font-size: 15px;
+  text-align: center;
+}
+
+.section2{
+  margin-top: 0rpx; 
+  margin-left:61px;
+  font-size: 15px;
+  
+}
+
+.btntype{
+  margin-top:150rpx;
+  width:400rpx
+}

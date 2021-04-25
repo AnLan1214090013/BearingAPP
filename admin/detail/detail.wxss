@@ -1,0 +1,45 @@
+.table {
+  margin-top: 80rpx;
+  width: 750rpx;
+  height: 700rpx;
+} 
+
+.tt{
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction:row;
+  justify-content:space-around;
+}
+
+.gkTitle {
+  width: 25%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.9)
+}
+
+.gkContentBox {
+  display: flex;
+  width: 100%;
+  font-size: 8px;
+  justify-content: space-around;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid black;
+}
+
+.gkContentBox:last-child {
+  border: none;
+}
+
+.gkContent {
+  width: 25%;
+  text-align: center;
+}
+
+.top{
+  margin-top: 30rpx;
+  font-size: 20;
+}
