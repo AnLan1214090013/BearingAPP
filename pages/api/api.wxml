@@ -1,0 +1,20 @@
+<view class="titleContainer">
+  <text class="big-title">算法评估指标</text>
+</view>
+<view class='tier1'>
+  <view class='tier2'>
+    <view >训练结果</view>
+    <view >accuracy</view>
+    <view >recall</view>
+    <view >precision</view>
+    <view >fMeasure</view>
+  </view>
+  <view class='tier2'>
+    <view >RandomForest</view>
+    <view wx:for='{{resultArray1}}'>{{item}}</view>
+  </view>  
+</view>
+<view class="echartContainer">
+  <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+</view>
+<nav-tabar selected="{{selected}}"></nav-tabar> 

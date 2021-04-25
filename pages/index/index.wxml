@@ -1,0 +1,42 @@
+<!--index.wxml-->
+
+<view >
+  
+  
+<view class="container">
+</view>
+
+
+  <view class="userinfo">
+    <block wx:if="{{canIUseOpenData}}" calss="userinfo-opendata">
+      <view class="userinfo-avatar" bindtap="bindViewTap">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data type="userNickName"></open-data>
+    </block>
+    <block wx:elif="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      
+      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+  
+    </block>
+  
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}试试</text>
+    </block>
+    
+
+
+  </view>
+  
+
+<button class='btnadmin'  bindtap="bindconfirm" > 
+    <image class='btnImg' src='../../images/admin2.png' plain= 'true' mode="widthFix" ></image>
+    <view>身份检验</view>
+ </button>
+
+ 
+</view>
+ 

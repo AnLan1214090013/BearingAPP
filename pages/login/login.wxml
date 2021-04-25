@@ -1,0 +1,16 @@
+
+<view class="body" mode = "bottom" style="background-image:url('https://i.loli.net/2021/04/24/xtas71XB5O4vLlJ.png')" >
+<form class="login-form">
+  
+  <view class="input-group {{userid_focus ? 'active' : ''}}">
+    <text class="input-label">工号</text>
+    <input type="number" cursor-spacing="30" id="userid" maxlength="10" placeholder="请输入员工工号" bindinput="getZhanghao" bindfocus="inputFocus" bindblur="inputBlur" />
+  </view>
+  <view class="input-group {{passwd_focus ? 'active' : ''}}">
+    <text class="input-label">密码</text>
+    <input password="true" cursor-spacing="30" id="passwd" placeholder="初始密码为身份证后6位" bindinput="getMima" bindfocus="inputFocus" bindblur="inputBlur" />
+  </view>
+  <button type="primary" class="btntype" bindtap="login">登录</button>
+
+</form>
+</view>
